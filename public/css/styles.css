@@ -1,0 +1,38 @@
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #18181b; /* Equivalent to bg-zinc-900 */
+}
+
+.chessboard {
+    display: grid; /* Ensure the chessboard is a grid */
+    grid-template-columns: repeat(8, 1fr); /* 8 columns */
+    grid-template-rows: repeat(8, 1fr); /* 8 rows */
+    width: 384px; /* Equivalent to w-96 */
+    height: 384px; /* Equivalent to h-96 */
+    background-color: #a1a1aa; /* Equivalent to bg-zinc-400 */
+}//
+
+.square {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%; /* Ensure squares fill the grid cell */
+    height: 100%; /* Ensure squares fill the grid cell */
+}
+
+.square.white {
+    background-color: #f0d9b5; /* Light square color */
+}
+
+.square.black {
+    background-color: #b58863; /* Dark square color */
+}
+
+.piece {
+    font-size: 36px; /* Size of the chess pieces */
+    cursor: pointer;
+}
